@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    background-color: #F9FAFB;
+}
+
+.sidebarpic {
+    width: 25rem;
+    height: 100vh;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.formstart {
+    padding: 5rem;
+}
+
+label{
+    display: block;
+}
+
+.form-content {
+    display: flex;
+    width: 35rem;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+}
+
+form {
+    margin-top: 5rem;
+    background-color: #FFFFFF;
+}
+
+.field {
+    display: flex;
+    flex-direction:column;
+    flex: 1 1 16rem;
+    min-width: 16rem;
+}
+
+.field .password {
+    flex-basis: 100%;
+}
+
+.pattern {
+    margin: 0.25rem 0 0;
+    font-size: 0.8rem;
+}
+
+button {
+    background-color: #596D48;
+    color: #F8F9F7;
+    margin-top: 2rem;
+    padding: 0.5rem 2.5rem  ;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+input {
+    border-radius: 6px;
+    padding: 4px;
+}
+
+input:focus,
+input:active {
+    border-color: #4A6FD6;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 111, 214, 0.2);
+}
+
+input:invalid {
+    border-color: #CA5555;
+    outline: none;
+}
+
+.dontmatch {
+    color: #CA5555;
+    font-size: 14px;
+    margin-top: 4px;
+}

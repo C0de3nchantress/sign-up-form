@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Form</title>
+    <link rel="stylesheet" href="./modern-normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <img src=".//pictures/catstock.jpg" alt="catncorgi" class="sidebarpic">
+
+
+    <section class="formstart">
+        <h2>This is a fake adoption service, the only animal we have for adoption is me. So fill this form only if you
+        wanna adopt me.</h2>
+
+        <h2>You know you want to.</h2>
+
+        <form action="./adoption.html">
+            <h3>Let's do this!</h3>
+
+            <div class="form-content">
+                <div class="field">
+                    <label for="firstname">
+                        First Name*
+                    </label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+
+                <div class="field">
+                    <label for="lastname">
+                        Last Name*
+                    </label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">
+                        Email
+                    </label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="field">
+                    <label for="phno">
+                        Phone Number
+                    </label>
+                    <input type="number" name="phno" id="phno">
+                </div>
+
+                <div class="field password">
+                    <label for="password">
+                        Password
+                    </label>
+                    <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$" required>
+                    <p class="pattern">*min 6 letters, include a capital letter and a number</p>
+                </div>
+
+                <div class="field">
+                    <label for="confirmpass">
+                        Confirm Password
+                    </label>
+                    <input type="password" name="confirmpass" id="confirmpass" required>
+                    <div class="dontmatch"></div>
+                </div>
+            </div>
+
+            <button type="submit">Adopt Me</button>
+        </form>
+
+        <p>Already have an account? <a href="">Log in</a></p>
+    </section>
+
+
+</body>
+
+</html>
